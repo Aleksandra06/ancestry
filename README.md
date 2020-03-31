@@ -1,0 +1,2 @@
+# kin
+.net core, blazor
