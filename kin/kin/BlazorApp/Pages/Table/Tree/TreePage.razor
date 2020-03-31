@@ -1,0 +1,64 @@
+﻿@page "/Tree"
+@inherits TreePageModel
+
+<div class="row">
+    <div class="col-5">
+        <div class="mt-2">
+            <span class="glyphicon glyphicon-filter"></span>@(ItemsList?.Count ?? 0) Treffer
+        </div>
+
+        @*<div>
+                <span class="btn btn-nav" @onclick="@CreateItem">Hinzufügen</span>
+                <span class="btn btn-nav" @onclick="@GenerierenOpen">Generieren</span>
+                <span class="btn btn-nav" @onclick="@Delete">Löschen</span>
+            </div>*@
+        <table class="table table-sm col-12">
+            <thead>
+                <tr>
+                    @*<th>
+                            <SortIcon Column="KursstartkalenderId" Title="#" Sort="@Sort"></SortIcon>
+                        </th>*@
+                    <th>
+                        @*<SortIcon Column="IdNode" Title="LfdJahresNr" Sort="@Sort"></SortIcon>*@
+                        IdNode
+                    </th>
+                    <th>
+                        @*<SortIcon Column="NodeId" Title="Node" Sort="@Sort"></SortIcon>*@
+                        NodeId
+                    </th>
+                    <th>
+                        @*<SortIcon Column="MotherId" Title="Mother" Sort="@Sort"></SortIcon>*@
+                    </th>
+                    <th>
+                        @*<SortIcon Column="FatherId" Title="Father" Sort="@Sort"></SortIcon>*@
+                        FatherId
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var item in ItemsList)
+            {
+                <tr>
+                    <td>@item.IdNode</td>
+                    <td>@item.NodeId</td>
+                    <td>@item.MotherId</td>
+                    <td>@item.FatherId</td>
+
+                    @*<td>
+                            <i class="btn glyphicon glyphicon-cog" @onclick="@(() => Edit(item))"></i>
+                            @if (!item.IsDeleted)
+                            {
+                                <i class="btn glyphicon glyphicon-trash cursor" @onclick="@(() => Trash(item))"></i>
+                            }
+                            else
+                            {
+                                <i class="btn glyphicon glyphicon-refresh cursor" @onclick="@(() => Restore(item))"></i>
+                                <i class="btn glyphicon glyphicon-remove-circle cursor" @onclick="@(() => Remove(item))"></i>
+                            }
+                        </td>*@
+                </tr>
+            }
+        </table>
+    </div>
+</div>

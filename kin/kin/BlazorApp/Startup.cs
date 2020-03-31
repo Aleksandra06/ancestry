@@ -9,7 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BlazorApp.Data;
+using kin.TreeDB;
+using kin.BlazorApp.Data.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp
 {
@@ -28,7 +30,12 @@ namespace BlazorApp
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
+
+            services.AddDbContext<TreeDbContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("TreeContext")));
+
+            services.AddScoped<TreeService>();
+            services.AddScoped<HumanService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
