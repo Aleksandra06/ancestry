@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B6585AED-6F1E-4D19-9F5C-6BA7658EBCB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{AC6508CA-2C2C-405C-B2CF-033A3C6BBD6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kin.treeDB", "kin.treeDB\kin.treeDB.csproj", "{EB5229FA-D3EF-4681-9D03-2759B2CFC122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB5229FA-D3EF-4681-9D03-2759B2CFC122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5229FA-D3EF-4681-9D03-2759B2CFC122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5229FA-D3EF-4681-9D03-2759B2CFC122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5229FA-D3EF-4681-9D03-2759B2CFC122}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB5229FA-D3EF-4681-9D03-2759B2CFC122} = {B6585AED-6F1E-4D19-9F5C-6BA7658EBCB1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {841ED09F-9D20-44FC-AF82-4B159E627EE0}
+	EndGlobalSection
+EndGlobal
