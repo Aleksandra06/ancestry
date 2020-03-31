@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Kin.TreeDB
+namespace kin.TreeDB
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {

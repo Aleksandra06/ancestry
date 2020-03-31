@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using Kin.TreeDB.Models;
+using kin.TreeDB.Models;
 
-namespace Kin.TreeDB
+namespace kin.TreeDB
 {
     public class TreeDbContext : DbContext
     {
