@@ -25,11 +25,11 @@ namespace Ancestry.BlazorApp.PageModels
         {
             get
             {
-                return _item.IdName;
+                return _item.IdHuman;
             }
             set
             {
-                _item.IdName = value;
+                _item.IdHuman = value;
             }
         }
         [Required]

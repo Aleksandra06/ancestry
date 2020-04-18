@@ -8,7 +8,7 @@ namespace Ancestry.AncestryDB.Models
     public class Human : ICloneable
     {
         [Key]
-        public int IdName { get; set; }
+        public int IdHuman { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string MiddleName { get; set; }

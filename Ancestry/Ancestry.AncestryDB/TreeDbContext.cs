@@ -15,6 +15,6 @@ namespace Ancestry.AncestryDB
 
         }
         public DbSet<Human> HumanDbSet { get; set; }
-        public DbSet<Tree> TreeDbSet { get; set; }
+        public DbSet<Node> TreeDbSet { get; set; }
     }
 }

@@ -33,7 +33,7 @@ namespace Ancestry.BlazorApp.Data.Services
         public void Update(HumanItemViewModel item)
         {
             var x = repo.FindById(item.IdName);
-            x.IdName = item.IdName;
+            x.IdHuman = item.IdName;
             x.MiddleName = item.MiddleName;
             x.Name = item.Name;
             x.Surname = item.Surname;

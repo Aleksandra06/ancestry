@@ -9,16 +9,16 @@ namespace Ancestry.BlazorApp.PageModels
 {
     public class TreeItemViewModel : ICloneable
     {
-        private Tree _item;
+        private Node _item;
         public TreeItemViewModel()
         {
-            _item = new Tree();
+            _item = new Node();
         }
-        public TreeItemViewModel(Tree model)
+        public TreeItemViewModel(Node model)
         {
             _item = model;
         }
-        public Tree Item => _item;
+        public Node Item => _item;
 
         [Required]
         public int IdNode 
@@ -37,22 +37,22 @@ namespace Ancestry.BlazorApp.PageModels
         {
             get
             {
-                return _item.NodeId;
+                return _item.HumanId;
             }
             set
             {
-                _item.NodeId = value;
+                _item.HumanId = value;
             }
         }
         public string NodeIdString
         {
             get
             {
-                return _item.NodeId.ToString();
+                return _item.HumanId.ToString();
             }
             set
             {
-                _item.NodeId = Convert.ToInt32(value);
+                _item.HumanId = Convert.ToInt32(value);
             }
         }
         public string NodeName { get; set; }
@@ -116,7 +116,7 @@ namespace Ancestry.BlazorApp.PageModels
         public object Clone()
         {
             TreeItemViewModel tempObject = (TreeItemViewModel)this.MemberwiseClone();
-            tempObject._item = (Tree)_item.Clone();
+            tempObject._item = (Node)_item.Clone();
             return tempObject;
         }
     }

@@ -10,18 +10,18 @@ namespace Ancestry.BlazorApp.Data.Services
 {
     public class TreeService
     {
-        private EFRepository<Tree> repo;
+        private EFRepository<Node> repo;
 
         public TreeService(TreeDbContext _context)
         {
-            repo = new EFRepository<Tree>(_context);
+            repo = new EFRepository<Node>(_context);
         }
         public async Task<List<TreeItemViewModel>> GetAll()
         {
             var result = repo.Get().Select(r => Convert(r)).ToList();
             return await Task.FromResult(result);
         }
-        private static TreeItemViewModel Convert(Tree r)
+        private static TreeItemViewModel Convert(Node r)
         {
             return new TreeItemViewModel(r);
         }
@@ -35,7 +35,7 @@ namespace Ancestry.BlazorApp.Data.Services
             var x = repo.FindById(item.IdNode);
             x.MotherId = item.MotherId;
             x.FatherId = item.FatherId;
-            x.NodeId = item.NodeId;
+            x.HumanId = item.NodeId;
             repo.Update(x);
         }
 
