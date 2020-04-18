@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\kin.treeDB\kin.treeDB.csproj" />
+    <ProjectReference Include="..\Ancestry.AncestryDB\Ancestry.AncestryDB.csproj" />
   </ItemGroup>
 
 </Project>

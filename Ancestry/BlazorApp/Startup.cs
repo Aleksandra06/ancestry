@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using kin.TreeDB;
-using kin.BlazorApp.Data.Services;
+using Ancestry.AncestryDB;
+using Ancestry.BlazorApp.Data.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp

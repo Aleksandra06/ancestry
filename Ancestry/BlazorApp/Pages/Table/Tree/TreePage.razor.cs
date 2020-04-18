@@ -1,5 +1,5 @@
-﻿using kin.BlazorApp.Data.Services;
-using kin.BlazorApp.PageModels;
+﻿using Ancestry.BlazorApp.Data.Services;
+using Ancestry.BlazorApp.PageModels;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;

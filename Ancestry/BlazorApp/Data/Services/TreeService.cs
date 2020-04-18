@@ -1,12 +1,12 @@
-﻿using kin.BlazorApp.PageModels;
-using kin.TreeDB;
-using kin.TreeDB.Models;
+﻿using Ancestry.BlazorApp.PageModels;
+using Ancestry.AncestryDB;
+using Ancestry.AncestryDB.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace kin.BlazorApp.Data.Services
+namespace Ancestry.BlazorApp.Data.Services
 {
     public class TreeService
     {

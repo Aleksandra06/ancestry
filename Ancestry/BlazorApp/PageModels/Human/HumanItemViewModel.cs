@@ -1,11 +1,11 @@
-﻿using kin.TreeDB.Models;
+﻿using Ancestry.AncestryDB.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace kin.BlazorApp.PageModels
+namespace Ancestry.BlazorApp.PageModels
 {
     public class HumanItemViewModel : ICloneable
     {

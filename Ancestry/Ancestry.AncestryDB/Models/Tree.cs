@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace kin.TreeDB.Models
+namespace Ancestry.AncestryDB.Models
 {
     [Table("Tree")]
     public class Tree : ICloneable

@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B6585AED-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{AC6508CA-2C2C-405C-B2CF-033A3C6BBD6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kin.treeDB", "kin.treeDB\kin.treeDB.csproj", "{EB5229FA-D3EF-4681-9D03-2759B2CFC122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ancestry.AncestryDB", "Ancestry.AncestryDB\Ancestry.AncestryDB.csproj", "{EB5229FA-D3EF-4681-9D03-2759B2CFC122}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{C71FC45C-8883-4422-8658-20D19288C3BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{C71FC45C-8883-4422-8658-20D19288C3BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

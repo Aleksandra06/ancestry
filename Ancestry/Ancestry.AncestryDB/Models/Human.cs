@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace kin.TreeDB.Models
+namespace Ancestry.AncestryDB.Models
 {
     [Table("Human")]
     public class Human : ICloneable

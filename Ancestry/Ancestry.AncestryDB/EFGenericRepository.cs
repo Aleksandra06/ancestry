@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace kin.TreeDB
+namespace Ancestry.AncestryDB
 {
     public class EFRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {

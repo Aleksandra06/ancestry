@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using kin.TreeDB.Models;
+using Ancestry.AncestryDB.Models;
 
-namespace kin.TreeDB
+namespace Ancestry.AncestryDB
 {
     public class TreeDbContext : DbContext
     {
